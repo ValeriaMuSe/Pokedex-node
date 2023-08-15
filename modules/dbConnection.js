@@ -1,4 +1,4 @@
-// Módulo para la conexión a la base de datos (db.js)
+
 const mongoose = require('mongoose');
 
 const dbConnectionURL = 'mongodb+srv://valeriams13:Al7EjEAdpD4c6oAK@cluster0.ogk8bi9.mongodb.net/pokedex';

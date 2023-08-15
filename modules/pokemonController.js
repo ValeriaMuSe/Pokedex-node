@@ -5,7 +5,7 @@ const PokemonWeaknesses = require('./poke-weaknesses');
 const PokemonEvolution = require('./poke-evolution');
 const PokemonDescription = require('./poke-description');
 
-// Controlador para obtener la lista de pokémon
+
 exports.getPokemons = async (req, res) => {
   try {
     const pokemons = await Pokemon.find();
@@ -20,7 +20,6 @@ exports.getPokemons = async (req, res) => {
   }
 };
 
-// Controlador para obtener un pokémon por su ID
 exports.getPokemonById = async (req, res) => {
   try {
     const pokemon = await Pokemon.findById(req.params.id);
