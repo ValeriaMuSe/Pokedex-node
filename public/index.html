@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/styles.css">
     <title>Pokedex</title>
 </head>
+
 <body>
-    <h1>Pokedex</h1>
+    <h1 class="title">Pokedex</h1>
     <form action="">
-        <fieldset>
+        <fieldset >
             <label>Ingrese el nombre del pokemon</label>
-            <input type="text">
+            <input class="name" type="text">
         </fieldset>
         <fieldset>
             <label>Ingrese la imagen del pokemon</label>
-            <input type="file" id="image" name="image" accept="image/*" required><br>
+            <input  class="image" type="file" id="image" name="image" accept="image/*" required><br>
         </fieldset>
         <fieldset>
-            <label>Ingrese el tipo de pokemon</label>
+            <label class="type">Ingrese el tipo de pokemon</label>
+            <div class="types">
             <label for="">Acero</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Agua</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Bicho</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Dragón</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
+        </div>
+        <div class="types">
             <label for="">Eléctrico</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Fantasma</label>
-            <input type="checkbox">
+            <input class="option"  type="checkbox">
             <label for="">Fuego</label>
-            <input type="checkbox">
+            <input class="option"  type="checkbox">
             <label for="">Hada</label>
-            <input type="checkbox">
+            <input class="option"  type="checkbox">
+        </div>
+        <div class="types">
             <label for="">Lucha</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Normal</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Planta</label>
-            <input type="checkbox">
+            <input class="option"  type="checkbox">
             <label for="">Psíquico</label>
-            <input type="checkbox">
+            <input class="option"  type="checkbox">
+        </div>
+        <div class="types">
             <label for="">Roca</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Siniestro</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Tierra</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
             <label for="">Veneno</label>
-            <input type="checkbox">
+            <input class="option"  type="checkbox">
             <label for="">Volador</label>
-            <input type="checkbox">
+            <input class="option" type="checkbox">
+        </div>
         </fieldset>
         <fieldset>
             <label>Ingrese la descripción del pokemon</label>
-            <textarea id="description" name="description" required></textarea><br>
+            <textarea class="description" id="description" name="description" required></textarea><br>
         </fieldset>
         <fieldset>
             <label>Tiene evolución el pokemon</label>
+            <div class="evolution">
             <label for="">Si</label>
             <input type="checkbox">
             <label for="">No</label>
             <input type="checkbox">
+        </div>
         </fieldset>
         <fieldset>
             <label>Ingrese las debilidades del pokemon</label>
             <input type="text">
         </fieldset>
-        <button type="submit">Submit form</button>
+        <button class="btn" type="submit">Submit form</button>
     </form>
     <script src="/public/scripts.js"></script>
 </body>
+
 </html>
